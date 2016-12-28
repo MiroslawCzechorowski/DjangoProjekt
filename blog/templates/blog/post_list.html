@@ -1,33 +1,71 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Kupony promocyjne w Twoim mieście!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-    <div class="page-header">
-{% if user.is_authenticated %}
+    	<div id="wrapper-thank">
+    	<div class="thank">
+            {% if user.is_authenticated %}
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 {% endif %}
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% for post in posts %}
-                        <div class="post">
-                            <div class="date">
-                                {{ post.published_date }}
-                            </div>
-                        <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaksbr }}</p>
-                        </div>
+        	<div class="thank-text">Lokalny kupon</div>
+    	</div>
+	</div>
+
+        <div class="main-container-image">
+        <section class="work">
+                    {% for post in posts reversed %}
+                        <figure class="white">
+
+								<img src="{{ post.model_pic.url }}" alt="{{ post.title }}" />
+								<dl>
+									<dt>{{ post.title }}</dt>
+									<dd>{{ post.text|linebreaksbr }}</dd>
+								</dl>
+							</a>
+                            <div id="wrapper-part-info">
+                            	<div id="part-info"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></div>
+							</div>
+                        </figure>
                     {% endfor %}
-                </div>
-            </div>
+        </section>
         </div>
-    </body>
+	<div id="main-container-footer">
+		<div class="container-footer">
+
+            <div id="row-1f">
+            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Czym są kupony?</span><br>Dzięki kuponom możesz zaoszczędzić swój czas i pieniądze. Znajdź rabat na co tylko zechcesz w Twojej miejscowości.</div>
+            </div>
+
+            <div id="row-2f">
+            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Jak to działa?</span><br>Znajdź kupon, który Cię interesuję. Kliknij go, aby zobaczyć szczegóły i pokaż je sprzedawcy podczas zakupów. To wszystko!</div>
+            </div>
+
+            <div id="row-3f">
+            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Pozostań w kontakcie!</span><br>Jeśli jesteś zainteresowany współpracą, zadzwoń 0 600 - 601 - 602 lub napisz kontakt@kupony.pl</div>
+            </div>
+
+            <div id="row-4f">
+            	<div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Reklama</span><br>Szukasz miejsca na reklame? Właśnie ją znalazłeś. Zadzwoń!</div>
+
+            </div>
+
+		</div>
+	</div>
+
+    <div id="wrapper-copyright">
+		<div class="copyright">
+    		<div class="copy-text object">Copyright 2016. All rights reservet. Website made by <a style="color:#D0D1D4;" href="http://localhost/"> kupony group.</a></div>
+    	</div>
+    </div>
+
+</div>
+</body>
 </html>
