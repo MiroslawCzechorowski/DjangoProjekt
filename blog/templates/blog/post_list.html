@@ -16,6 +16,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+          <li></li><a href="{% url 'contact' %}"><button class="btn btn-default">Contact</button></a></li>
           {% if user.is_authenticated %}
               <li><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a></li>
           {% endif %}
@@ -26,6 +27,13 @@
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
+
+   {% if user and not user.is_anonymous %}
+     Hello {{ user.get_full_name|default:user.username }}!
+   {% else %}
+     I don’t think we’ve met before.
+   {% endif %}
+
           {% if user.is_anonymous %}
         <a href="{% url 'login' %}"><button class="btn btn-default">Login</button></a>
         {% endif %}
