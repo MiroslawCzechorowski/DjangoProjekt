@@ -20,8 +20,21 @@ width: 90%;
 margin-left: 5%;
 margin-top: 5%;
 }
-
-
+.btn-default{
+	margin-top:7px;
+}
+.login_form {
+	text-align:center;
+	margin: 5%;
+}
+.pagination{
+	width:100%;
+	text-align: center;
+}
+.step-links a{
+	text-decoration: none;
+	color:black;
+}
 .work figure {
     float:left;
 	width:calc(100% / 4 - 30px);
@@ -39,11 +52,9 @@ margin-top: 5%;
 	box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
 	background-color:#FFF;
 }
-
 .work figure.white dl{
     background: #FFF;
 }
-
 
 .work figure a img {
     height: 90%;
@@ -74,6 +85,10 @@ margin-top: 5%;
     opacity: 1;
 }
 
+.logo img{
+	margin: 0 auto;
+
+}
 .work figure dl dt {
 	font-family: Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;

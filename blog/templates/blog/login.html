@@ -26,12 +26,7 @@
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-          {% if user.is_anonymous %}
-        <a href="{% url 'login' %}"><button class="btn btn-default">Login</button></a>
-        {% endif %}
-          {% if user.is_authenticated %}
-          <a href="{% url 'logout' %}"><button class="btn btn-default">Logout</button></a>
-          {% endif %}
+        <button type="submit" class="btn btn-default">Login</button>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -46,37 +41,13 @@
 	</div>
 
         <div class="main-container-image">
-        <section class="work">
-                    {% for post in posts reversed %}
-                        <figure class="white">
-
-								<img src="{{ post.model_pic.url }}" alt="{{ post.title }}" />
-								<dl>
-									<dt>{{ post.title }}</dt>
-									<dd>{{ post.text|linebreaksbr }}</dd>
-								</dl>
-							</a>
-                            <div id="wrapper-part-info">
-                            	<div id="part-info"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></div>
-							</div>
-                        </figure>
-                    {% endfor %}
-        <div class="pagination">
-            <span class="step-links">
-        {% if posts.has_previous %}
-            <a href="?page={{ posts.previous_page_number }}">Poprzednia <<</a>
-        {% endif %}
-
-        <span class="current">
-            Strona {{ posts.number }} z {{ posts.paginator.num_pages }}.
-        </span>
-
-        {% if posts.has_next %}
-            <a href="?page={{ posts.next_page_number }}"> >> Następna</a>
-        {% endif %}
-            </span>
-        </div>
-        </section>
+{% block content %}
+  <form class='login_form' method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}
         </div>
 	<div id="main-container-footer">
 		<div class="container-footer">
