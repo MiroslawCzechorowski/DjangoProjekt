@@ -85,8 +85,13 @@ margin-top: 5%;
     opacity: 1;
 }
 
+.logo{
+	text-align: center;
+
+}
 .logo img{
-	margin: 0 auto;
+	margin-top: 3%;
+	height: auto;
 
 }
 .work figure dl dt {

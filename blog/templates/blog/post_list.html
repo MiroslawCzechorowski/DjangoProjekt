@@ -29,16 +29,16 @@
       <ul class="nav navbar-nav navbar-right">
 
    {% if user and not user.is_anonymous %}
-     Hello {{ user.get_full_name|default:user.username }}!
+     <li>Hello {{ user.get_full_name|default:user.username }}!</li>
    {% else %}
-     I don’t think we’ve met before.
+     <li>I don’t think we’ve met before.</li>
    {% endif %}
 
           {% if user.is_anonymous %}
-        <a href="{% url 'login' %}"><button class="btn btn-default">Login</button></a>
+       <li><a href="{% url 'login' %}"><button class="btn btn-default">Login</button></a></li>
         {% endif %}
           {% if user.is_authenticated %}
-          <a href="{% url 'logout' %}"><button class="btn btn-default">Logout</button></a>
+          <li><a href="{% url 'logout' %}"><button class="btn btn-default">Logout</button></a></li>
           {% endif %}
       </ul>
     </div><!-- /.navbar-collapse -->
