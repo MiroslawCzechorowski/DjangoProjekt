@@ -12,8 +12,35 @@
 	margin-top:25px;
 	opacity:1;
 }
+.form-group input{
+	width:100%;
+}
+.form-group textarea{
+	width:100%;
+}
+.work{
+	width:80%;
+	margin: 0 10% 0 10%;
+}
+.center {
+	margin-top:20px;
+	margin-bottom:20px;
+    text-align:center;
+}
+.border_form{
+    border-radius: 25px;
+	margin-top:40px;
+    border: 2px solid lightslategray;
+    padding: 20px;
+}
+.center form {
+    display:inline-block;
+	width:70%;
+}
+.center button{
+	margin-bottom:30px;
+}
 img{
-	max-width:300px;
 	max-height:200px;
 height: 90%;
 width: 90%;
@@ -85,14 +112,13 @@ margin-top: 5%;
     opacity: 1;
 }
 
-.logo{
-	text-align: center;
-
-}
 .logo img{
-	margin-top: 3%;
-	height: auto;
-
+	display:block;
+	height: 100%;
+	width: auto;
+	max-width:1024px;
+	max-height:300px;
+	margin: 0 auto;
 }
 .work figure dl dt {
 	font-family: Helvetica, sans-serif;
