@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="event">
+    <div class="container events">
+    <div class="text-right">
+        <a class="btn btn-default" href="{% url 'event_edit' pk=event.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a class="btn btn-default" href="{% url 'event_remove' pk=event.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+    </div>
+                    <h1><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a></h1>
+                    <p class="lead">by {{ event.author }}</p>
+                    <hr>
+                    <p>
+                    <span class="glyphicon glyphicon-time"> </span>
+                    Utworzony {{ event.created_date }},{% if event.published_date %}
+                opublikowany{{ event.published_date }}
+        {% endif %}
+                    </p>
+                    <img class="img-responsive" src="{{ event.model_pic.url }}" alt="{{ event.title }}" />
+                    <hr>
+                    <p>{{ event.text }}</p>
+
+
+    </div>
+    </div>
+{% endblock %}

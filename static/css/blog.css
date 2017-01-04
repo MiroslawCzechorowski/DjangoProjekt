@@ -4,6 +4,18 @@
 	height:auto;
 }
 
+.events img{
+	color:black;
+	max-height:200px;
+	width:auto;
+	text-decoration: none;
+
+}
+a, a:hover{
+	text-decoration:none;
+	color:black;
+}
+
 .main-container-image {
     float:left;
     width:100%;

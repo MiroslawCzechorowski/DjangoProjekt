@@ -13,3 +13,5 @@ urlpatterns = [
     url(r'^login/$', auth_views.login,{'template_name': 'blog/login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+handler500 = 'blog.views.handler500'
+handler404 = 'blog.views.handler400'

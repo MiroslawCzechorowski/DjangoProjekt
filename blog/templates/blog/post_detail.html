@@ -1,15 +1,23 @@
 {% extends 'blog/base.html' %}
 {% block content %}
     <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
+    <div class="container events">
+    <div class="text-right">
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-        <img src="{{ post.model_pic.url }}" alt="{{ post.title }}" />
+    </div>
+                    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                    <p class="lead">by {{ post.author }}</p>
+                    <hr>
+                    <p>
+                    <span class="glyphicon glyphicon-time"> </span>
+                    Utworzony {{ post.created_date }},{% if post.published_date %}
+                opublikowany{{ post.published_date }}
+        {% endif %}
+                    </p>
+                    <img class="img-responsive" src="{{ post.model_pic.url }}" alt="{{ post.title }}" />
+                    <hr>
+                    <p>{{ post.text }}</p>
+    </div>
     </div>
 {% endblock %}
