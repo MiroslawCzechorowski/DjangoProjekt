@@ -14,4 +14,4 @@ urlpatterns = [
     url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler500 = 'blog.views.handler500'
-handler404 = 'blog.views.handler400'
+handler404 = 'blog.views.handler404'
