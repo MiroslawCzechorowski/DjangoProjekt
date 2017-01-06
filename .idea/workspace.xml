@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f644b7ef-af72-47a8-bf72-f39237063794" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LocalCoupons/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LocalCoupons/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LocalCoupons/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LocalCoupons/wsgi.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/login.html" afterPath="$PROJECT_DIR$/blog/templates/blog/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog.css" afterPath="$PROJECT_DIR$/static/css/blog.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/doctrees/authors.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/doctrees/installation.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/doctrees/usage.doctree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/_sources/authors.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/_sources/installation.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/_sources/usage.rst.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/authors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/installation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/usage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/source/authors.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/source/installation.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/source/usage.rst" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" afterPath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/objects.inv" afterPath="$PROJECT_DIR$/docs/build/html/objects.inv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" afterPath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/searchindex.js" afterPath="$PROJECT_DIR$/docs/build/html/searchindex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/source/index.rst" afterPath="$PROJECT_DIR$/docs/source/index.rst" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

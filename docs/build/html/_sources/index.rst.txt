@@ -9,9 +9,6 @@ Welcome to DjangoCMS's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   		hello <installation.rst>
-   		abc <usage.rst>
-   		abcd <authors.rst>
 
 
 
