@@ -1,3 +1,4 @@
 # DjangoProjekt
-Documentation you will find at  `readthedocs.io
-<http://lokalny-kupon.readthedocs.io/en/latest/>`_.	
+Documentation you will find at  `readthedocs.io`_.
+
+.. _a link: http://http://lokalny-kupon.readthedocs.io/en/latest/
