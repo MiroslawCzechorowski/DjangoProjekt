@@ -3,24 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="f644b7ef-af72-47a8-bf72-f39237063794" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/doctrees/authors.doctree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/doctrees/installation.doctree" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/doctrees/usage.doctree" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/_sources/authors.rst.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/_sources/installation.rst.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/_sources/usage.rst.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/authors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/installation.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/build/html/usage.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/source/authors.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/source/installation.rst" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/docs/source/usage.rst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" afterPath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/doctrees/installation.doctree" afterPath="$PROJECT_DIR$/docs/build/doctrees/installation.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/objects.inv" afterPath="$PROJECT_DIR$/docs/build/html/objects.inv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Makefile" afterPath="$PROJECT_DIR$/docs/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/.buildinfo" afterPath="$PROJECT_DIR$/docs/build/html/.buildinfo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" afterPath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/_sources/installation.rst.txt" afterPath="$PROJECT_DIR$/docs/build/html/_sources/installation.rst.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/genindex.html" afterPath="$PROJECT_DIR$/docs/build/html/genindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/index.html" afterPath="$PROJECT_DIR$/docs/build/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/installation.html" afterPath="$PROJECT_DIR$/docs/build/html/installation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/search.html" afterPath="$PROJECT_DIR$/docs/build/html/search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/build/html/searchindex.js" afterPath="$PROJECT_DIR$/docs/build/html/searchindex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/source/conf.py" afterPath="$PROJECT_DIR$/docs/source/conf.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/source/index.rst" afterPath="$PROJECT_DIR$/docs/source/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/source/installation.rst" afterPath="$PROJECT_DIR$/docs/source/installation.rst" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -95,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Coupons/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+            <state relative-caret-position="363">
+              <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -138,6 +144,7 @@
       <find>center</find>
       <find>main-container-footer</find>
       <find>container-footer</find>
+      <find>Database</find>
     </findStrings>
     <replaceStrings>
       <replace>render</replace>
@@ -243,56 +250,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DjangoProjektApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoProjektApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoProjektApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoProjektApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoProjektApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoProjektApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoProjektApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1113,14 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Coupons/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1134,6 +1083,14 @@
             <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#button#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Coupons/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

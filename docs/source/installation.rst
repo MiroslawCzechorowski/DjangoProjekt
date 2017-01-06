@@ -1,7 +1,9 @@
-============
-Installation
-============
+Instalation
+=============
+You can simply clone git repository
 
-Install the package with pip::
+.. code-block:: python
 
-    $ pip install read-the-docs-template
+    $ git clone https://github.com/MiroslawCzechorowski/DjangoProjekt
+
+Than simply edit project you your needs.
