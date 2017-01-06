@@ -7,9 +7,6 @@
     {% if form.errors %}
         <p>Your username and password didn't match. Please try again.</p>
     {% endif %}
-    <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-    </ul>
     <form method="post" action=".">{% csrf_token %}
   <div class="form-group">
     <label for="id_username">Nazwa użytkownika</label><br/>
@@ -19,10 +16,14 @@
     <label for="id_password">Hasło</label><br/>
     {{ form.password }}
   </div>
-  <button type="submit" value="Login" class="btn btn-default">Zaloguj</button><br/>
-<a href="/register">Zarejestruj się!</a>
+        <button type="submit" value="Login" class="btn btn-success" style="min-width:100px">Zaloguj</button>
+        <button type="button" class="btn btn-info" style="min-width:100px"><a href="/register" style="color:white">Rejestracja</a></button>
 
 </form>
+            <p class="Lead">Lub zaloguj się za pomocą:</p><br>
+        <button type="submit" value="Login" class="btn btn-primary" style="min-width:100px"><a href="/accounts/facebook/login/?process=login" style="color:white">Facebook</a></button>
+        <button type="submit" value="Login" class="btn btn-danger" style="min-width:100px"><a href="/accounts/google/login/?process=login" style="color:white">Google+</a></button>
+
     </div>
 </div>
     </div>

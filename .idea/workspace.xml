@@ -2,35 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f644b7ef-af72-47a8-bf72-f39237063794" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/contact_form/error.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/common.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/message.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/message.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/message_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/subscribe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/subscribe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/subscribe_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/unsubscribe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/unsubscribe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/unsubscribe_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/update.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/message/update_subject.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/newsletter_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/newsletter_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/submission_archive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_activate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_subscribe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_subscribe_activated.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_subscribe_email_sent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_subscribe_user.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_unsubscribe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_unsubscribe_activated.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_unsubscribe_email_sent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_unsubscribe_user.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_update_activated.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/newsletter/subscription_update_email_sent.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/admin.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/CouponsList/apps.py" afterPath="" />
@@ -44,16 +15,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/LocalCoupons/urls.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/LocalCoupons/wsgi.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/forms.py" afterPath="$PROJECT_DIR$/blog/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/post_edit.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/events/event_detail.html" afterPath="$PROJECT_DIR$/blog/templates/events/event_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/events/event_edit.html" afterPath="$PROJECT_DIR$/blog/templates/events/event_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/events/events_list.html" afterPath="$PROJECT_DIR$/blog/templates/events/events_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/urls.py" afterPath="$PROJECT_DIR$/blog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/login.html" afterPath="$PROJECT_DIR$/blog/templates/blog/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog.css" afterPath="$PROJECT_DIR$/static/css/blog.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,11 +37,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="message.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="message.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templates/newsletter/message/message.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+              <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -101,11 +63,39 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="101" lean-forward="false" selection-start-line="23" selection-start-column="101" selection-end-line="23" selection-end-column="140" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#button#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#button#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="blog.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/blog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="226" selection-end-column="20" />
+            <state relative-caret-position="373">
+              <caret line="229" column="20" lean-forward="false" selection-start-line="229" selection-start-column="20" selection-end-line="229" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Coupons/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -178,7 +168,6 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/404.html" />
         <option value="$PROJECT_DIR$/blog/templates/account/email.html" />
         <option value="$PROJECT_DIR$/blog/templates/account/login.html" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/login.html" />
         <option value="$PROJECT_DIR$/Coupons/urls.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/urls.py" />
@@ -201,8 +190,6 @@
         <option value="$PROJECT_DIR$/blog/templates/newsletter/subscription_unsubscribe_user.html" />
         <option value="$PROJECT_DIR$/blog/templates/newsletter/newsletter_list.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_edit.html" />
-        <option value="$PROJECT_DIR$/static/css/blog.css" />
-        <option value="$PROJECT_DIR$/Coupons/settings.py" />
         <option value="$PROJECT_DIR$/contact_form/views.py" />
         <option value="$PROJECT_DIR$/blog/templates/contact_form/error.html" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
@@ -211,6 +198,9 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/post_detail.html" />
         <option value="$PROJECT_DIR$/blog/templates/events/events_list.html" />
         <option value="$PROJECT_DIR$/blog/templates/newsletter/message/message.html" />
+        <option value="$PROJECT_DIR$/static/css/blog.css" />
+        <option value="$PROJECT_DIR$/Coupons/settings.py" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/login.html" />
       </list>
     </option>
   </component>
@@ -267,6 +257,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoProjektApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoProjektApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoProjektApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoProjektApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -909,22 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Coupons/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact_form/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1071,18 +1077,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="226" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/newsletter/message/message.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1099,6 +1097,38 @@
             <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="229" column="20" lean-forward="false" selection-start-line="229" selection-start-column="20" selection-end-line="229" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Coupons/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="101" lean-forward="false" selection-start-line="23" selection-start-column="101" selection-end-line="23" selection-end-column="140" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#button#1;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#button#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#button#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

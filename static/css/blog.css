@@ -226,6 +226,9 @@ margin-top: 5%;
 	color:#A1A1A1;
 	margin-top:80px;
 }
+#id_password, #id_username{
+	max-width:300px;
+}
 .text-row-1f,.text-row-2f,.text-row-3f{
 	margin-bottom:100px;
 }
