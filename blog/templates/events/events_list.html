@@ -5,15 +5,15 @@
 
             {% for event in events reversed %}
                     <h1><a href="{% url 'event_detail' pk=event.pk %}">{{ event.title }}</a></h1>
-                    <p class="lead">by {{ event.author }}</p>
+                    <p class="lead">Autor: {{ event.author }}</p>
                     <hr>
                     <p>
                     <span class="glyphicon glyphicon-time"> </span>
-                    Posted on {{ event.created_date }}
+                    Utworzony {{ event.created_date }}
                     </p>
                     <img class="img-responsive" src="{{ event.model_pic.url }}" alt="{{ event.title }}" />
                     <hr>
-                    <p>{{ event.text|linebreaksbr }}</p>
+                    <p>{{ event.text|safe|linebreaksbr }}</p>
                 <hr>
             {% endfor %}
 

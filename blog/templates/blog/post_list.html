@@ -9,7 +9,7 @@
                     <img src="{{ post.model_pic.url }}" alt="{{ post.title }}" />
                     <dl>
                         <dt>{{ post.title }}</dt>
-                        <dd>{{ post.text|linebreaksbr }}</dd>
+                        <dd>{{ post.text|safe|linebreaksbr }}</dd>
                     </dl>
                     <div id="wrapper-part-info">
                         <div id="part-info"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></div>

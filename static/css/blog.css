@@ -15,7 +15,10 @@ a, a:hover{
 	text-decoration:none;
 	color:black;
 }
-
+textarea {
+	width:100% !important;
+	height:auto !important;
+}
 .main-container-image {
     float:left;
     width:100%;

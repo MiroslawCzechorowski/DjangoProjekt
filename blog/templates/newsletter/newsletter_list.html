@@ -1,0 +1,37 @@
+{% extends "blog/base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Newsletter list" %}{% endblock title %}
+
+{% block content %}
+{% if user.is_authenticated %}
+        <div class="container">
+        <div class="center">
+<form method="POST" action="">
+  {% csrf_token %}
+  {{ formset.management_form }}
+    <h2>{% trans "Newslettery:" %}</h2>
+<hr>
+    {% for form in formset.forms %}
+<p class="lead">{{ form.id }}{{ form.newsletter }}
+    {{ form.subscribed }}
+<a href="{% url "newsletter_detail" form.instance.newsletter.slug %}">{{ form.instance.newsletter.title }}</a></p>
+
+    {% endfor %}
+  <p><input id="id_submit" name="submit" value="{% trans "Update subscriptions" %}" type="submit" /></p>
+</form>
+    </div>
+    </div>
+{% else %}
+        <div class="container">
+        <div class="center">
+        <h2>{% trans "Nasze newslettery:" %}</h2>
+        <hr>
+    {% for newsletter in object_list %}
+        <p class="lead"><a href="{% url "newsletter_detail" newsletter.slug %}"><span class="glyphicon glyphicon-bullhorn"></span>   {{ newsletter.title }}</a></p>
+    {% endfor %}
+    </div>
+    </div>
+{% endif %}
+{% endblock %}

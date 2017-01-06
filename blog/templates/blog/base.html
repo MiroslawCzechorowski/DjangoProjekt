@@ -44,6 +44,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="{% url 'events_list' %}">Wydarzenia</a></li>
+        <li><a href="/newsletter/">Newsletter</a></li>
         <li><a href="{% url 'contact' %}">Kontakt</a></li>
       {% if user.is_authenticated %}
         <li><a href="{% url 'post_new' %}">Dodaj kupon</a></li>
@@ -69,7 +70,7 @@
 
     <!-- LOGO SECTION-->
 
-    <div class="logo"><img src="../images/logo.jpg"/></div>
+    <div class="logo"><img src="{{MEDIA_URL}}logo.jpg"/></div>
     <!--	<div class="thank-text">Lokalny kupon</div>-->
     <!--CONTENT SECTION-->
     {% block content %}
@@ -100,7 +101,7 @@
     <!--COPYRIGHT SECTION-->
     <div id="wrapper-copyright">
 		<div class="copyright">
-    		<div class="copy-text object">Copyright 2016. All rights reservet. Website made by <a style="color:#D0D1D4;" href="http://localhost/"> kupony group.</a></div>
+    		<div class="copy-text object">Copyright 2016. All rights reservet. Website made by <a style="color:#D0D1D4;" href="/"> kupony group.</a></div>
     	</div>
     </div>
 

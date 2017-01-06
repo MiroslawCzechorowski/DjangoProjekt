@@ -1,0 +1,158 @@
+{% load thumbnail i18n %}<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>{{ newsletter.title }}: {{ message.title }}</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="logo" style="display:block;height: 100%;width: auto;max-width:1024px;max-height:300px;margin: 0 auto;"><img src="{{MEDIA_URL}}logo.jpg"/></div>
+        <div class="container">
+        <div class="center" style="	margin-top:20px;
+	margin-bottom:20px;
+    text-align:center;">
+    <h2>{{ newsletter.title }}</h2>
+    <h3>{{ message.title }}</h3>
+    {% for article in message.articles.all %}
+        <p class="lead">{{ article.title }}</p>
+        
+        {% thumbnail article.image "200x200" as image %}
+            <img src="http://{{ site.domain }}{{ image.url }}" width="{{ image.width }}" height="{{ image.height }}">
+        {% endthumbnail %}
+
+        <div><p>{{ article.text|safe }}</p></div>
+        
+        {% if article.url %}
+            <div><a href="{{ article.url }}">{% trans "Read more" %}</a></div>
+        {% endif %}
+    {% endfor %}
+        {% if submission.publish %}
+    <a href="{{ site.domain }}{{ submission.get_absolute_url }}" class="btn btn-primary btn-lg" role="button">{% trans "Przeczytaj wpis na stronie" %}</a>
+        {%  endif %}
+<a href="{{ site.domain }}{% url "newsletter_unsubscribe_request" newsletter.slug %}" class="btn btn-default btn-lg" role="button">{% trans "Unsubscribe" %}</a>
+
+        </div>
+        </div>
+    <!--FOOTER SECTION-->
+	<div id="main-container-footer" style="	float:left;
+	width:100%;
+	height:300px;
+	background-color:#F9F9F9;
+	border-top:solid #F1F1F1 1px;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);">
+		<div class="container-footer" style="    position:relative;
+    width: 1200px;
+    margin-left:-600px;
+    left:50%;">
+
+            <div id="row-1f" style="	float:left;
+	width:calc(100% / 4);
+	height:200px;">
+            	<div class="text-row-1f" style="	float:left;
+	text-align:left;
+	height:140%;
+	line-height:140%;
+	margin-left:20px;
+	width:80%;
+	text-align:left;
+	font-family: Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight:400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#A1A1A1;
+	margin-top:80px;"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Czym są kupony?</span><br>Dzięki kuponom możesz zaoszczędzić swój czas i pieniądze. Znajdź rabat na co tylko zechcesz w Twojej miejscowości.</div>
+            </div>
+
+            <div id="row-2f" style="	float:left;
+	width:calc(100% / 4);
+	height:200px;">
+            	<div class="text-row-2f" style="	float:left;
+	text-align:left;
+	height:140%;
+	line-height:140%;
+	margin-left:20px;
+	width:80%;
+	text-align:left;
+	font-family: Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight:400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#A1A1A1;
+	margin-top:80px;" ><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Jak to działa?</span><br>Znajdź kupon, który Cię interesuję. Kliknij go, aby zobaczyć szczegóły i pokaż je sprzedawcy podczas zakupów. To wszystko!</div>
+            </div>
+
+            <div id="row-3f"  style="	float:left;
+	width:calc(100% / 4);
+	height:200px;">
+            	<div class="text-row-3f" style="	float:left;
+	text-align:left;
+	height:140%;
+	line-height:140%;
+	margin-left:20px;
+	width:80%;
+	text-align:left;
+	font-family: Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight:400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#A1A1A1;
+	margin-top:80px;"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Pozostań w kontakcie!</span><br>Jeśli jesteś zainteresowany współpracą, zadzwoń 0 600 - 601 - 602 lub napisz kontakt@kupony.pl</div>
+            </div>
+
+            <div id="row-4f" style="	float:left;
+	width:calc(100% / 4);
+	height:200px;">
+            	<div class="text-row-4f" style="	float:left;
+	text-align:left;
+	height:140%;
+	line-height:140%;
+	margin-left:20px;
+	width:80%;
+	text-align:left;
+	font-family: Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight:400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#A1A1A1;
+	margin-top:80px;"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Reklama</span><br>Szukasz miejsca na reklame? Właśnie ją znalazłeś. Zadzwoń!</div>
+
+            </div>
+
+		</div>
+	</div>
+    <!--COPYRIGHT SECTION-->
+    <div id="wrapper-copyright" style="	float:left;
+	width:100%;
+	height:70px;
+	background-color:#2E2D30;">
+		<div class="copyright" style="	position:relative;
+	width:1200px;
+	left:50%;
+	margin-left:-600px;
+	height:100%;
+	top:0;">
+    		<div class="copy-text object" style="	float:left;
+	text-align:left;
+	font-family: Helvetica, sans-serif;
+    font-size: 15px;
+	height:70px;
+	line-height:70px;
+	cursor:pointer;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color:#666;
+	margin-left:15px;
+	font-weight:500;">Copyright 2016. All rights reservet. Website made by <a style="color:#D0D1D4;" href="/"> kupony group.</a></div>
+    	</div>
+    </div>
+</body>
+</html>

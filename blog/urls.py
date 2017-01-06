@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^post_new/$', views.post_new, name='post_new'),
     url(r'^post/(?P<pk>[0-9]+)/edit/$', views.post_edit, name='post_edit'),
     url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
+    #url(r'^newsletter/', views.newsletter, name='newsletter'),
     url(r'^register/', views.register, name='register'),
     url(r'^login/$', auth_views.login,{'template_name': 'blog/login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout')

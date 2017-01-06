@@ -7,7 +7,7 @@
         <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
     </div>
                     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                    <p class="lead">by {{ post.author }}</p>
+                    <p class="lead">Autor: {{ post.author }}</p>
                     <hr>
                     <p>
                     <span class="glyphicon glyphicon-time"> </span>
@@ -17,7 +17,7 @@
                     </p>
                     <img class="img-responsive" src="{{ post.model_pic.url }}" alt="{{ post.title }}" />
                     <hr>
-                    <p>{{ post.text }}</p>
+                    <p>{{ post.text|safe }}</p>
     </div>
     </div>
 {% endblock %}
