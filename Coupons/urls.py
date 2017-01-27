@@ -23,5 +23,4 @@ urlpatterns = [
     url(r'', include('events.urls')),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^newsletter/', include('newsletter.urls')),
-    url(r'^comments/', include('django_comments.urls')),
 ]
