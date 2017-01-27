@@ -5,7 +5,7 @@ Anonymous user permissions:
     
     - see content of events,
     - see content of coupons,
-    - un/subscribe to newsletter,
+    - un/subscribe to the newsletter,
     - send message with contact form,
 
 Loged(registered) in user permissions:
@@ -19,5 +19,5 @@ Loged in superuser permissions:
     - registered user,
     - access to Django admin panel,
     - write messages for newsletter,
-    - manage newsletter,
+    - manage newsletters,
     - CRUD operations at users,

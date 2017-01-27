@@ -37,9 +37,8 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_COOKIE_AGE = TIME
 SESSION_IDLE_TIMEOUT = TIME
 #Newsletter confirmation disabled let send e-mail to all users.
-NEWSLETTER_CONFIRM_EMAIL = True
+NEWSLETTER_CONFIRM_EMAIL = False
 # Application definition
-DJANGO_WYSIWYG_FLAVOR = "tinymce_advanced"
 INSTALLED_APPS = [
     'admin_tools',
     'admin_tools.theming',
@@ -52,9 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'django_wysiwyg',
     'django_nvd3',
     'djangobower',
+    'django_extensions',
     'admin_tools_stats',
     'events',
     'contact_form',
@@ -67,6 +66,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'sorl.thumbnail',
     'newsletter',
+    'django_comments',
 ]
 SITE_ID = 1
 
@@ -178,12 +178,11 @@ MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'Coupons/images/')
 
 #E-mail address
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
-EMAIL_PORT = 1025
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mailtrap.io'
+EMAIL_HOST_USER = '09205445f31e72'
+EMAIL_HOST_PASSWORD = '2977e2646233dd'
+EMAIL_PORT = '465'
 
 
 PROJECT_ROOT = os.path.abspath(
@@ -213,4 +212,3 @@ try:
     from settings_local import *
 except ImportError:
     pass
-

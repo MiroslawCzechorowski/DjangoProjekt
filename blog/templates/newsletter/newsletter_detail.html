@@ -9,9 +9,11 @@
         <div class="center">
             <h3>{{ object.title }}</h3>
                 {% if not user.is_authenticated %}
-                <p><a href="{% url "newsletter_update_request" object.slug %}">{% trans "Aktualizuj" %}</a></p>
+                <p><a href="{% url "newsletter_update_request" object.slug %}">{% trans "Zapisz się" %}</a></p>
                 {% endif %}
+                {% if user.is_authenticated %}
                 <p><a href="{% url "newsletter_unsubscribe_request" object.slug %}">{% trans "Unsubscribe" %}</a></p>
+                {% endif %}
                 <p><a href="{% url "newsletter_archive" object.slug %}">{% trans "Archiwum" %}</a></p>
                 <p><a href="../">{% trans "Powrót" %}</a></p>
         </div>

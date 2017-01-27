@@ -6,4 +6,4 @@ You can simply clone git repository
 
     $ git clone https://github.com/MiroslawCzechorowski/DjangoProjekt
 
-Than simply edit project you your needs.
+Than simply edit project to your needs.
